@@ -1,0 +1,8 @@
+// adiciona TODOS os arquivos alterados ao commit
+git add .
+
+// cria um commit com uma mensagem 
+git commit -m "mensagem descrevendo as alterecoes"
+
+// envia o codigo do commit para o repositorio 
+git push

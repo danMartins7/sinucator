@@ -1,0 +1,19 @@
+{
+  "name": "sinucator",
+  "version": "1.0.0",
+  "description": "Projeto para controlar partidas de sinuca.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danMartins7/sinucator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danMartins7/sinucator/issues"
+  },
+  "homepage": "https://github.com/danMartins7/sinucator#readme"
+}
