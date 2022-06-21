@@ -1,0 +1,6 @@
+
+1 Adicionar jogadores 
+2 Adicionar partida
+3 Historio das Partidas
+4 Raking de pontucao 
+5 Adicionar temporada

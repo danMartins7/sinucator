@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/danMartins7/sinucator/issues"
   },
-  "homepage": "https://github.com/danMartins7/sinucator#readme"
+  "homepage": "https://github.com/danMartins7/sinucator#readme",
+  "dependencies": {
+    "prompt-async": "^0.9.9"
+  }
 }
