@@ -1,4 +1,4 @@
-function SeasonRaking(seasonID, players){
+exports.SeasonRaking = function SeasonRaking(seasonID, players){
     this.seasonID = seasonID;
     this.players = players;
 

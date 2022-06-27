@@ -1,4 +1,4 @@
-function  SeasonType (type, mode){
+exports.SeasonType = function  SeasonType (type, mode){
     this.type = type;
     this.mode = mode;
 

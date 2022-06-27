@@ -1,4 +1,4 @@
-function Season(seasonTypeID, name, startedAt, endedAt, matches){
+exports.Season = function Season(seasonTypeID, name, startedAt, endedAt, matches){
     this.seasonTypeID = seasonTypeID;
     this.name = name;
     this.startedAt = startedAt;

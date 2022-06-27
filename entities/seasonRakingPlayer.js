@@ -1,4 +1,4 @@
-function SeasonRakingPlayer (playerID, totalWins, totalDefeats){
+exports.SeasonRakingPlayer = function SeasonRakingPlayer (playerID, totalWins, totalDefeats){
     this.playerID = playerID;
     this.totalWins = totalWins;
     this.totalDefeats = totalDefeats;
