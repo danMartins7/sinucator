@@ -7,6 +7,11 @@ function DB(){
     this.seasonRakingPlayers = [];
     this.seasonTypes = [];
 
+    this.saveSeasonType = function(seasonType){
+        seasonType.id = this.seasonTypes.length + 1;
+        this.seasonTypes.push(seasonType);
+    }
+
     return this;
 }
 
