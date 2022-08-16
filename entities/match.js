@@ -1,7 +1,6 @@
-exports.Match = function Match (seasonID, playerMatches){
+exports.Match = function Match (seasonID){
     this.id = 0;
     this.seasonID = seasonID;
-    this.playerMatches = playerMatches;
 
     return this;
 }

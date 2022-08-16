@@ -1,8 +1,8 @@
-exports.Player = function Player (name, nickname, playerMatches){
+exports.Player = function Player (name, nickname){
     this.id = 0;
     this.name = name;
     this.nickname = nickname;
-    this.playerMatches = playerMatches;
+    
 
     return this;
 }
