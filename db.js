@@ -18,6 +18,22 @@ function DB() {
         this.saveSeasonType(new SeasonType("3 bolinhas", "individual"));
     }
 
+    this.findPlayerByName = function(name){
+        return this.players.find(x => x.name == name)
+    }
+
+    this.findMatchesBySeason = function(seasonName){
+       var season = this.seasons.find(x => x.name == seasonName)
+        return this.matches.filter(x => x.seasonID == season.id)
+    }
+
+    this.findVictorysByName = function (name, isWinner){
+        var player = this.players.find(x => x.name == name)
+        var pmatches= this.playerMatches.filter(x => x.playerID == player.id)
+        return pmatches.filter(x => x.isWinner == isWinner).length
+
+    }
+
     this.saveMatch = function (match) {
         match.id = this.matches.length + 1;
         this.matches.push(match);
