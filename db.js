@@ -5,11 +5,11 @@ const { match } = require("./entities/match")
 function DB() {
     this.matches = [];
     this.players = [];
-    this.playerMatches = [];
     this.seasons = [];
     this.seasonRakings = [];
     this.seasonRakingPlayers = [];
     this.seasonTypes = [];
+    this.teams = []
 
     // cadastro de valores fixos da aplicaçao
     this.init = function () {
@@ -34,6 +34,17 @@ function DB() {
 
     }
 
+    this.findVictorysByNameAndSeason = function (playerName, isWinner, seasonName){
+        var player = this.players.find(x => x.name == playerName)
+        var pmatches= this.playerMatches.filter(x => x.playerID == player.id)
+        var season = this.seasons.find(x => x.name == seasonName)
+        
+        
+
+    }
+
+
+
     this.saveMatch = function (match) {
         match.id = this.matches.length + 1;
         this.matches.push(match);
@@ -42,9 +53,9 @@ function DB() {
         player.id = this.players.length + 1;
         this.players.push(player);
     }
-    this.savePlayerMatch = function (playerMatch) {
-        playerMatch.id = this.playerMatches.length + 1;
-        this.playerMatches.push(playerMatch);
+    this.saveTeam = function (team) {
+        team.id = this.teams.length + 1;
+        this.teams.push(team);
     }
     this.saveSeason = function (season) {
         season.id = this.seasons.length + 1;
